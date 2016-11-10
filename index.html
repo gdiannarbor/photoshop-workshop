@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to Photoshop - Girl Develop It</title>
+
+		<meta name="description" content="Materials for Intro to Adobe Photoshop, Girl Develop It - Boston">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/gdicool.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
+		<!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">-->
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h3>Intro to Photoshop</h3>
+                    <img src="images/gdi_logo_badge.png" alt="Girl Develop It Ann Arbor" />
+                </section>
+
+                <section>
+                    <h3>Welcome!</h3>
+                    <div class="left-align">
+                        <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+                        <p style="padding-top: 30px;"><strong>Some "rules":</strong></p>
+                        <ul style="width: 100%;">
+                            <li>We are here for you!</li>
+                            <li>Every question is important</li>
+                            <li>Help each other</li>
+                            <li>Have fun!</li>
+                        </ul>
+                        <p style="padding-top: 30px;" class="fragment">Raise your hand if this is your first GDI class</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Huge thank you to</h3>
+                    <img src="images/District-Hall-logo.png" alt="Girl Develop It Boston" />
+                    District Hall is a dedicated civic space where the innovation community can gather and exchange ideas. Inside you’ll find open workspace, classrooms, assembly space, flexible use ‘pods’, and writable surfaces everywhere!
+                    <br><br>
+                    <p><a href="http://www.districthallboston.org/" target="_blank" style="font-size:80%;">http://www.districthallboston.org/</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Information</h3>
+                    <p>
+                    <div class="left-align">
+                        WiFi (District Hall, innovation!)
+                        <br>
+                        Bathrooms
+                        <br>
+                        TA: Kathleen McMahon
+                        <br><br>
+                        To get slides &amp; files go to: <code><a href="https://github.com/jamieleeconnor/gdi-intro-photoshop" target="_blank" style="font-size:80%;">https://github.com/jamieleeconnor/gdi-intro-photoshop</a></code>
+                        <br>
+                        <img src="images/download-zip.png" style="box-shadow: 2px 2px 2px #ccc;">
+                    </div>
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Topics we'll cover </h3>
+                    <ul style="width: 55%;">
+                        <li class="fragment">What is Photoshop?</li>
+                        <li class="fragment">Workspaces, Units &amp; Tools</li>
+                        <li class="fragment">Creating a new file</li>
+                        <li class="fragment">Manipulating a photo</li>
+                        <li class="fragment">Tricks &amp; Tips</li>
+                        <li class="fragment">Photoshop for web design</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>What to expect</h3>
+                    <ul style="width: 80%;">
+                        <li class="fragment">This is an introduction to a very complex, multi-use program</li>
+                        <li class="fragment">It will give you a better sense of the features of the program</li>
+                        <li class="fragment">I don't know everything, and neither will you... probably ever!</li>
+                        <li class="fragment">Have fun! Explore the program! Ask questions!</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>What is Photoshop?</h2>
+                    <img src="images/photoshop-icon.png" alt="Photoshop" style="width: 160px;"/>
+                    <p>Raster (pixel) based graphics software</p>
+                    <h3 class="fragment">Mainly used for</h3>
+                    <ul class="fragment">
+                        <li>Cropping/resizing images</li>
+                        <li>Touching up/editing photos</li>
+                        <li>Website layouts</li>
+                        <li>Graphics creation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Raster vs. Vector</h2>
+                    <div style="width: 48%; margin-right: 2%; float: left; text-align: left;">
+                        <p class="fragment"><strong>Raster</strong> <em>(Photoshop)</em>:</p>
+                        <ul class="fragment" style="margin-left: 25%;">
+                            <li>Dot / pixel based</li>
+                            <li>Cannot resize without quality loss</li>
+                            <li>Precise editing, modify each pixel</li>
+                            <li>GIF, JPG, PNG</li>
+                        </ul>
+                    </div>
+                    <div style="width: 50%; float: left; text-align: left;">
+                        <p class="fragment"><strong>Vector</strong> <em>(Illustrator, Sketch)</em>:</p>
+                        <ul class="fragment">
+                            <li>Mathematical calculations that form objects or lines</li>
+                            <li>No pixels therefore resolution-independent</li>
+                            <li>Infinitely resize while maintaining quality</li>
+                            <li>SVG, EPS</li>
+                        </ul>
+                    </div>    
+                </section>
+                <section>
+                    <div style="width: 48%; margin-right: 2%; float: left; text-align: left;">
+                        <p class="fragment">Raster:</p>
+                        <img class="fragment" src="images/raster-vector-2.png" alt="Photoshop" />
+                    </div>
+                    <div style="width: 50%; float: left; text-align: left;">
+                        <p class="fragment">Vector:</p>
+                        <img class="fragment" src="images/raster-vector-3.png" alt="Photoshop" />
+                    </div>    
+                </section>
+
+                <section>
+                    <br><br>
+                    <h2>Workspaces,<br>units &amp; tools</h2>
+                </section>
+                <section>
+                    <h3>New Files</h3>
+                    <img src="images/new-document.png" alt="" />
+                </section>
+                <section>
+                	<h3>New Files</h3>
+            		<ul style="width: 80%;">
+                	    <li>Document type: Web or custom</li>
+                	    <li>Choose pixels (for web) or inches (for print)</li>
+                	    <li>Resolution 72 pixels/inch</li>
+                	    <li>RGB color</li>
+                	    <li>Background white or transparent</li>
+                	</ul>
+                    <p style="font-size:70%; margin-top:100px;">Read more: <a href="https://www.smashingmagazine.com/2015/05/retina-design-in-photoshop/" target="_blank">A Better Way To Design For Retina In Photoshop</a></p>
+                </section>
+                <section>
+                    <img src="images/photoshop-screenshot.png" alt="" />
+                </section>
+                
+                <section>
+                    <h3>Arrange</h3>
+                    <ul style="width: 70%;">
+                        <li>By default, files open in new tabs</li>
+                        <li>Go to Window > Arrange</li>
+                        <li>Tile All, 3-up, 4-up</li>
+                        <li>Consolidate all to tabs</li>
+                    </ul>
+                    <br><br>
+                    <img src="images/window-arrange.png" style="box-shadow: 2px 2px 2px #ccc;">
+                </section>
+                <section>
+                    <h3>Preferences</h3>
+                    <ul style="width: 100%;">
+                    	<li>Go to Photoshop > Preferences</li>
+                        <li>Interface Settings - change UI color theme</li>
+                        <li>Units &amp; Rulers</li>
+                        <li>Guides &amp; Grid</li>
+                    </ul>
+                    <br><br>
+                    <img src="images/preferences-interface.png" style="box-shadow: 2px 2px 2px #ccc;">
+                </section>
+                
+                <section>
+               		<h3>Workspaces</h3>
+                    <br><br>
+                    <div style="width: 50%; float: left;">
+                        <p style="text-align: left; font-weight:bold;">Saved arrangements of:</p>
+                        <ul style="width: 100%;">
+                            <li>tools</li>
+                            <li>tool panels</li>
+                            <li>keyboard shortcuts</li>
+                            <li>menus</li>
+                        </ul>
+                    </div>
+                    <div class="fragment" style="width: 40%; float: left; padding-left:20px;">
+                        <p style="text-align: left; font-weight:bold;">It might include:</p>
+                        <ul style="width: 100%;">
+                            <li>Type</li>
+                            <li>Character panel</li>
+                            <li>Paragraph panel</li>
+                            <li>Layers panel</li>
+                            <li>History panel</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>Hot keys</h3>
+                    <br><br>
+                    <ul style="width: 80%;">
+                        <li>V - Move tool, neutral tool, always go back to it</li>
+                        <li>Cmd + 1 - scale back to 100%</li>
+                        <li>Cmd + T - resize</li>
+                        <li>Cmd + J - duplicate layer</li>
+                        <li>Option + Cmd + I - resize by giving precise numbers</li>
+                        <li>U - shape tool</li>
+                        <li>T - type tool</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <br><br>
+                    <h2>Let's do some<br>Photoshop</h2>
+                </section>
+                
+                <section>
+                    <h3>How about facebook <br>profile page?</h3>
+                    <br><br>
+                      <img src="images/facebook-picture.png" style="box-shadow: 2px 2px 2px #ccc; width: 800px;">
+                </section>
+                
+                <section>
+                    <h3>Step 1: Prep the cover photo</h3>
+                    <ul style="width: 80%;">
+                        <li>Resize it</li>
+                        <li>Crop it</li>
+                        <li>Let's turn the ball in white one</li>
+                        <li>Try layer filters</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Step 2: Work on profile photo</h3>
+                    <ul style="width: 80%;">
+                        <li>Resize it</li>
+                        <li>Adjust the light</li>
+                        <li>Add an icon</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Step 3: Let's work with text</h3>
+                    <ul style="width: 80%;">
+                        <li>Fonts</li>
+                        <li>Font styles</li>
+                        <li>Fitting text in objects</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Step 4: Button</h3>
+                    <ul style="width: 80%;">
+                        <li>Border radius</li>
+                        <li>Button styles</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tips</h2>
+                    <ul style="width: 65%">
+                        <li>Group and group some more</li>
+                        <li>Name layers and folders clearly</li>
+                        <li>Use guides</li>
+                    </ul>
+                 </section>
+
+                 <section>
+                    <h3>Saving</h3>
+                    <section>
+                        <img src="images/file-types.gif" />
+                    </section>
+                </section>
+
+                 <section>
+                    <h3>Canvas Size vs. Image Size</h3>
+                    <ul>
+                        <li style="font-weight:bold;">Canvas Size</li>
+                        <ul style="font-size:70%;">
+                            <li>Changes the current size of your document, but not the image itself</li>
+                            <li>The borders expand or contract without the image</li>
+                            <li>Adding to the canvas size will add blank area around the image</li>
+                            <li>Decreasing the canvas size will crop the image, meaning you will lose some of the image depending on where you crop it</li>
+
+                        </ul>
+                        <li style="font-weight:bold;">Image Size</li>
+                        <ul style="font-size:70%;">
+                            <li>When you modify the image size, you change how large the image is</li>
+                            <li>Use image size when you want to shrink, expand, or change the resolution of an image</li>
+                            <li>The image borders “stick” to the image and the image is pulled or squished with the borders</li>
+
+                        </ul>
+
+                    </ul>
+                 </section>
+
+                <section>
+                    <h4>You don't need to start from scratch!</h4>
+                    <br>
+                    <ul>
+                        <li>The Grid System:<br>
+                            <a href="http://www.thegridsystem.org/?q=photoshop" target="_blank">http://www.thegridsystem.org/?q=photoshop</a>
+                        </li>
+                        <li>960 Grid System:<br>
+                            <a href="http://960.gs/" target="_blank">http://960.gs/</a>
+                        </li>
+                        <li>Photoshop Grids:<br>
+                            <a href="http://www.ravelrumba.com/photoshop-grids/" target="_blank">http://www.ravelrumba.com/photoshop-grids/</a>
+                        </li>
+                        <li>1200px Grid System:<br>
+                            <a href="http://1200px.com/" target="_blank">http://1200px.com/</a>
+                        </li>
+                        <li>There are tons of templates out there for Bootstrap, etc.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Helpful resources</h3>
+                    <ul>
+                        <li>Photoshop Etiquette:<br>
+                            <a href="http://photoshopetiquette.com/" target="blank" style="font-size:70%;">http://photoshopetiquette.com/</a></li>
+                        <li>Keyboard shortcuts cheat sheet:<br>
+                            <a href="http://makeawebsitehub.com/adobe-photoshop-keyboard-shortcuts/" target="blank" style="font-size:70%;">http://makeawebsitehub.com/adobe-photoshop-keyboard-shortcuts/</a></li>
+                        <li>More shortcuts from Smashing Mag:<br>
+                            <a href="http://www.creativebloq.com/photoshop/photoshop-shortcuts-1012966" target="blank" style="font-size:70%;">http://www.creativebloq.com/photoshop/photoshop-shortcuts-1012966</a></li>
+                        <li>The 47 best Photoshop plugins:<br>
+                            <a href="http://www.creativebloq.com/photoshop/best-photoshop-plugins-912722" target="blank" style="font-size:70%;">http://www.creativebloq.com/photoshop/best-photoshop-plugins-912722</a></li>
+                        <li>85 brilliant Photoshop tutorials:<br>
+                            <a href="http://www.creativebloq.com/graphic-design-tips/photoshop-tutorials-1232677" target="blank" style="font-size:70%;">http://www.creativebloq.com/graphic-design-tips/photoshop-tutorials-1232677</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Let's start to build a site!</h4>
+                    <br><br>
+                    <p>Some ideas of sites to mimic:</p>
+                        <a href="https://dribbble.com/shots/1794875-Freebie-PSD-Halcyon-Days-Website-PSD" target="_blank">Freebie Website PSD</a><br>
+                        <a href="https://eyeondesign.aiga.org/" target="_blank">AIGA Eye on Design</a><br>
+                        <a href="http://www.awwwards.com/" target="_blank">Awwwards</a></li>
+                        <br>
+                        <a href="https://www.girldevelopit.com/" target="_blank">Girl Develop It</a>
+
+                    <br><br>
+                    <p>Or build your own!</p>
+                </section>
+
+                <section>
+                  <h2>Questions?</h2>
+                  <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
+                    <div class ="clear"></div></div>
+                </section>
+
+                <section>
+                  <h3>Contact me</h3>
+                  <br><br>
+                  <p>Email
+                    <br>
+                    <code><a href="mailto:alinabochkacheva@gmail.com">alinabochkacheva@gmail.com</a></code>
+                    <br><br>
+                    Twitter
+                    <br><code><a href="https://twitter.com/alinauxtheworld" target="_blank">@alinauxtheworld</a></code>
+                  </p>
+                </section>
+                
+                <section>
+                	<h3>Feedback!</h3>
+                    <br><br>
+                	<p>Please visit this link:</p>
+                	<code style="display: block;margin:20px 0;"><a href="http://goo.gl/forms/783qulKV9P" target="_blank">http://goo.gl/forms/783qulKV9P</a></code>
+                	<p>to submit your feedback about this class. It's anonymous and I really appreciate it.</p>
+                </section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          Photoshop 101 -- Girl Develop It
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
