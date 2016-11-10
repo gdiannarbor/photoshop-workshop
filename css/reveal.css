@@ -1134,4 +1134,7 @@ body {
 	visibility: hidden;
 }
 
-
+#shortcuts .oses {
+  font-size: 14px;
+  padding-right: 7px;
+}
