@@ -12,20 +12,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gdicool.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/gdiaa.css" id="theme">
+        <link rel="stylesheet" href="lib/css/light.css">
+        <link rel="stylesheet" href="css/print/pdf.css" media="print">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
-		<!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">-->
+        <script src="lib/js/head.min.js"></script>
 
-		<!-- If use the PDF print sheet so students can print slides-->
-
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
 	</head>
 
 	<body>
@@ -34,10 +30,12 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-                <section>
-                    <h3>Intro to Photoshop</h3>
-                    <img src="images/gdi_logo_badge.png" alt="Girl Develop It Ann Arbor" />
-                </section>
+              <section>
+                <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
+                <div class="box--small">
+                  <h3 class="blue">Intro to Photoshop</h3>
+                </div>
+              </section>
 
                 <section>
                     <h3>Topics we'll cover </h3>
@@ -63,10 +61,10 @@
 
                 <section>
                     <h3>What is Photoshop?</h3>
-                    <img src="images/photoshop-icon.png" alt="Photoshop" style="width: 120px;"/>
+                    <img src="images/photoshop-icon.png" alt="Photoshop" class="img--bare box" style="width: 120px;"/>
                     <p>Raster (pixel) based graphics software</p>
                     <h3 class="fragment" style="font-size: 1.2em; margin-top: 1.5em;">Mainly used for</h3>
-                    <ul class="fragment" style="width: 45%;">
+                    <ul class="fragment copy--xsmall" style="width: 45%;">
                         <li>Cropping/resizing images</li>
                         <li>Touching up/editing photos</li>
                         <li>Website layouts</li>
@@ -78,7 +76,7 @@
                     <h3>Raster vs. Vector</h3>
                     <div style="width: 48%; margin-right: 4%; float: left; text-align: left;">
                         <p class="fragment"><strong style="color: #01A9B4;">Raster</strong> <em>(Photoshop)</em>:</p>
-                        <ul class="fragment" style="margin-left: 10%;">
+                        <ul class="fragment copy--small" style="margin-left: 10%;">
                             <li>Dot / pixel based</li>
                             <li>Cannot resize without quality loss</li>
                             <li>Precise editing, modify each pixel</li>
@@ -87,23 +85,23 @@
                     </div>
                     <div style="width: 48%; float: left; text-align: left;">
                         <p class="fragment"><strong style="color: #01A9B4;">Vector</strong> <em>(Illustrator, Sketch)</em>:</p>
-                        <ul class="fragment" style="margin-left: 10%;">
+                        <ul class="fragment copy--small" style="margin-left: 10%;">
                             <li>Mathematical calculations that form objects or lines</li>
                             <li>No pixels therefore resolution-independent</li>
                             <li>Infinitely resize while maintaining quality</li>
                             <li>SVG, EPS</li>
                         </ul>
-                    </div>    
+                    </div>
                 </section>
                 <section>
                     <div style="width: 48%; margin-right: 2%; float: left; text-align: left;">
                         <p class="fragment">Raster:</p>
-                        <img class="fragment" src="images/raster-vector-2.png" alt="Photoshop" />
+                        <img class="fragment img--bare" src="images/raster-vector-2.png" alt="Photoshop" />
                     </div>
                     <div style="width: 50%; float: left; text-align: left;">
                         <p class="fragment">Vector:</p>
-                        <img class="fragment" src="images/raster-vector-3.png" alt="Photoshop" />
-                    </div>    
+                        <img class="fragment img--bare" src="images/raster-vector-3.png" alt="Photoshop" />
+                    </div>
                 </section>
 
                 <section>
@@ -112,11 +110,11 @@
                 </section>
                 <section>
                     <h3>New Files</h3>
-                    <img src="images/new-document.png" alt="" />
+                    <img src="images/new-document.png"  class="img--bare" alt="" />
                 </section>
                 <section>
                 	<h3>New Files</h3>
-            		<ul style="width: 80%;">
+            		<ul style="width: 80%;" class="box--small">
                 	    <li>Document type: Web or custom</li>
                 	    <li>Choose pixels (for web) or inches (for print)</li>
                 	    <li>Resolution 72 pixels/inch</li>
@@ -128,10 +126,10 @@
                 <section>
                     <img src="images/photoshop-screenshot.png" alt="" />
                 </section>
-                
+
                 <section>
                     <h3>Arrange</h3>
-                    <ul style="width: 70%;">
+                    <ul style="width: 70%;" class="copy--small box--small">
                         <li>By default, files open in new tabs</li>
                         <li>Go to Window > Arrange</li>
                         <li>Tile All, 3-up, 4-up</li>
@@ -142,7 +140,7 @@
                 </section>
                 <section>
                     <h3>Preferences</h3>
-                    <ul style="width: 100%;">
+                    <ul style="width: 100%;" class="copy--small box--small">
                     	<li>Go to Photoshop > Preferences</li>
                         <li>Interface Settings - change UI color theme</li>
                         <li>Units &amp; Rulers</li>
@@ -151,12 +149,12 @@
                     <br><br>
                     <img src="images/preferences-interface.png" style="box-shadow: 2px 2px 2px #ccc;">
                 </section>
-                
+
                 <section>
                		<h3>Workspaces</h3>
                     <div style="width: 50%; float: left;">
                         <p style="text-align: left; font-weight:bold;">Saved arrangements of:</p>
-                        <ul style="width: 100%;">
+                        <ul style="width: 100%;" class="copy--small">
                             <li>Tools</li>
                             <li>Tool panels</li>
                             <li>Keyboard shortcuts</li>
@@ -165,7 +163,7 @@
                     </div>
                     <div class="fragment" style="width: 40%; float: left; padding-left:20px;">
                         <p style="text-align: left; font-weight:bold;">It might include:</p>
-                        <ul style="width: 100%;">
+                        <ul style="width: 100%;" class="copy--small">
                             <li>Type</li>
                             <li>Character panel</li>
                             <li>Paragraph panel</li>
@@ -174,67 +172,67 @@
                         </ul>
                     </div>
                 </section>
-                
+
                 <section id="shortcuts">
                     <h3>Hot keys</h3>
-                    <ul style="width: 80%;">
+                    <ul style="width: 80%;" class="copy--small">
                         <li>V - Move tool, neutral tool, always go back to it</li>
                         <li>
-                          <span class="oses">mac:</span>Cmd + 1
-                           <span class="oses">win:</span>Ctrl + 1 - scale back to 100%</li>
-                        <li><span class="oses">mac:</span>Cmd + T
-                           <span class="oses">win:</span>Ctrl + T- resize</li>
-                        <li><span class="oses">mac:</span>Cmd + J
-                          <span class="oses">win:</span>Ctrl + J - duplicate layer</li>
-                        <li><span class="oses">mac:</span>Option + Cmd + I<br>
-                          <span class="oses">win:</span>Alt + Ctrl + I - resize by giving precise numbers</li>
+                          <span class="oses"><b>mac:</b></span> Cmd + 1
+                           <span class="oses"><b>win:</b></span> Ctrl + 1 - scale back to 100%</li>
+                        <li><span class="oses"><b>mac:</b></span> Cmd + T
+                           <span class="oses"><b>win:</b></span> Ctrl + T- resize</li>
+                        <li><span class="oses"><b>mac:</b></span> Cmd + J
+                          <span class="oses"><b>win:</b></span> Ctrl + J - duplicate layer</li>
+                        <li><span class="oses"><b>mac:</b></span> Option + Cmd + I<br>
+                          <span class="oses"><b>win:</b></span> Alt + Ctrl + I - resize by giving precise numbers</li>
                         <li>U - shape tool</li>
                         <li>T - type tool</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <br><br>
                     <h3>Let's do some<br>Photoshop</h3>
                 </section>
-                
+
                 <section>
                     <h3>How about facebook <br>profile page?</h3>
                     <br>
-                      <img src="images/facebook-picture.png" style="box-shadow: 2px 2px 2px #ccc; width: 800px;">
+                      <img src="images/facebook-picture.png" style="box-shadow: 2px 2px 2px #ccc; width: 800px;" class="img--bare">
                 </section>
-                
+
                 <section>
                     <h3>Step 1: Prep the cover photo</h3>
-                    <ul style="width: 80%;">
+                    <ul style="width: 80%;" class="copy--small">
                         <li>Resize it</li>
                         <li>Crop it</li>
                         <li>Let's turn the ball in white one</li>
                         <li>Try layer filters</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h3>Step 2: Work on profile photo</h3>
-                    <ul style="width: 80%;">
+                    <ul style="width: 80%;" class="copy--small">
                         <li>Resize it</li>
                         <li>Adjust the light</li>
                         <li>Add an icon</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h3>Step 3: Let's work with text</h3>
-                    <ul style="width: 80%;">
+                    <ul style="width: 80%;" class="copy--small">
                         <li>Fonts</li>
                         <li>Font styles</li>
                         <li>Fitting text in objects</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h3>Step 4: Button</h3>
-                    <ul style="width: 80%;">
+                    <ul style="width: 80%;" class="copy--small">
                         <li>Border radius</li>
                         <li>Button styles</li>
                     </ul>
@@ -242,7 +240,7 @@
 
                 <section>
                     <h3>Tips</h3>
-                    <ul style="width: 65%">
+                    <ul style="width: 65%" class="copy--small">
                         <li>Group and group some more</li>
                         <li>Name layers and folders clearly</li>
                         <li>Use guides</li>
@@ -252,7 +250,7 @@
                  <section>
                     <h3>Saving</h3>
                     <section>
-                        <img src="images/file-types.gif" />
+                        <img src="images/file-types.gif" class="img--bare" />
                     </section>
                 </section>
 
@@ -260,15 +258,15 @@
                     <h3>Canvas Size vs. Image Size</h3>
                     <ul>
                         <li style="font-weight:bold;">Canvas Size</li>
-                        <ul style="font-size:70%;">
+                        <ul style="font-size:70%;" class="copy--small">
                             <li>Changes the current size of your document, but not the image itself</li>
                             <li>The borders expand or contract without the image</li>
                             <li>Adding to the canvas size will add blank area around the image</li>
                             <li>Decreasing the canvas size will crop the image, meaning you will lose some of the image depending on where you crop it</li>
 
                         </ul>
-                        <li style="font-weight:bold;">Image Size</li>
-                        <ul style="font-size:70%;">
+                        <li style="font-weight:bold; margin-top: 20px">Image Size</li>
+                        <ul style="font-size:70%;" class="copy--small">
                             <li>When you modify the image size, you change how large the image is</li>
                             <li>Use image size when you want to shrink, expand, or change the resolution of an image</li>
                             <li>The image borders “stick” to the image and the image is pulled or squished with the borders</li>
@@ -277,12 +275,12 @@
 
                     </ul>
                  </section>
-                 
+
                  <section>
                      <h3>A few cool things about CC version</h3>
                      <ul style="width: 80%;">
                          <li>Very easy to manipulate object that are created by the shape tool. Such as:
-                           <ul>
+                           <ul class="copy--small">
                              <li>Change  dimensions without disturbing the quality</li>
                              <li>Edit border radius</li>
                              <li>Create dashed/dotted borders</li>
@@ -295,7 +293,7 @@
                 <section>
                     <h4>You don't need to start from scratch!</h4>
                     <br>
-                    <ul>
+                    <ul class="copy--small">
                         <li>The Grid System:<br>
                             <a href="http://www.thegridsystem.org/?q=photoshop" target="_blank">http://www.thegridsystem.org/?q=photoshop</a>
                         </li>
@@ -314,7 +312,7 @@
 
                 <section>
                     <h3>Helpful resources</h3>
-                    <ul>
+                    <ul class="copy--small">
                         <li>Photoshop Etiquette:<br>
                             <a href="http://photoshopetiquette.com/" target="blank" style="font-size:70%;">http://photoshopetiquette.com/</a></li>
                         <li>Keyboard shortcuts cheat sheet:<br>
@@ -344,7 +342,7 @@
 
                 <section>
                   <h3>Questions?</h3>
-                  <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
+                  <div style = "font-size:1200%; height:100%; margin-top:20%" class ="blue">?
                     <div class ="clear"></div></div>
                 </section>
 
@@ -359,7 +357,7 @@
                     <br><code><a href="https://twitter.com/alinauxtheworld" target="_blank">@alinauxtheworld</a></code>
                   </p>
                 </section>
-                
+
                 <section>
                 	<h3>Feedback!</h3>
                     <br><br>
@@ -367,10 +365,18 @@
                 	<code style="display: block;margin:20px 0;"><a href="http://goo.gl/forms/783qulKV9P" target="_blank">http://goo.gl/forms/783qulKV9P</a></code>
                 	<p>to submit your feedback about this class. It's anonymous and I really appreciate it.</p>
                 </section>
+
+              <section>
+                <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
+                <div class="box--small">
+                  <h3 class="blue">Intro to Photoshop</h3>
+                </div>
+              </section>
+
 			</div>
   		<footer>
         <div class="copyright">
-          Photoshop 101 -- Girl Develop It
+          Intro to Photoshop ~ GDI Ann Arbor ~
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
@@ -382,27 +388,26 @@
 
 		<script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: false,
-				history: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        rollingLinks: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 		</script>
 
 	</body>

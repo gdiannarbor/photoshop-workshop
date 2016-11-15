@@ -1,7 +1,5 @@
-// Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
-// ---------------------------------------------
+// Settings
+@import "template/settings";
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -13,11 +11,10 @@ $linkColor: #92BB44;
 $selectionBackgroundColor: #134674;
 
 // Background generator
-@mixin bodyBackground() {
-	@include radial-gradient( lighten(#EDAB23, 40% ), #f7fbfc );
+@mixin pageBackground() {
+	@include background( radial-gradient( lighten(#EDAB23, 40% ), #f7fbfc ) );
 }
 
 
-// Theme template ------------------------------
-@import "../template/theme";
-// ---------------------------------------------
+// Theme
+@import "template/theme";
