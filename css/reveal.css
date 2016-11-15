@@ -13,6 +13,8 @@
  * RESET STYLES
  *********************************************/
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal iframe,
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal blockquote, .reveal pre,
 .reveal a, .reveal abbr, .reveal acronym, .reveal address, .reveal big, .reveal cite, .reveal code,
@@ -101,7 +103,7 @@ body {
 .green{color:#92BB44}
 .yellow{color:#EDAB23}
 .pink{color:#F05B62}
-.red{color:#8B0036}
+.red{color:#f05b62}
 
 /*********************************************
  * HEADERS
@@ -233,6 +235,11 @@ body {
 
 .reveal ul {
 	list-style-type: disc;
+}
+
+.reveal ul li {
+  margin-bottom: .5em;
+  font-size: .9em;
 }
 
 .reveal ul ul {
